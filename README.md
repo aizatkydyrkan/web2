@@ -19,7 +19,8 @@ The application fetches weather data from the **OpenWeather API** and displays i
 
 ## Project Structure
 web2/
-│── server.js
+
+server.js
 │── package.json
 │── .env
 │── README.md
