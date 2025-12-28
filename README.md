@@ -1,6 +1,6 @@
 # Assignment 2 – Backend API Integration & Service Development
 
-## 📌 Project Overview
+## Project Overview
 This project is a backend-based web application that retrieves and displays real-time weather data using external APIs.  
 All third-party API communication is handled strictly on the **server side**, following best backend security practices.
 
@@ -8,7 +8,7 @@ The application fetches weather data from the **OpenWeather API** and displays i
 
 ---
 
-## 🛠 Technologies Used
+## Technologies Used
 - Node.js
 - Express.js
 - Axios
@@ -17,4 +17,11 @@ The application fetches weather data from the **OpenWeather API** and displays i
 
 ---
 
-## 📂 Project Structure
+## Project Structure
+web2/
+│── server.js
+│── package.json
+│── .env
+│── README.md
+│── public/
+│   └── index.html
