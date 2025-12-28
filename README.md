@@ -1,14 +1,20 @@
-# Web2 Node.js Server
+# Assignment 2 – Backend API Integration & Service Development
 
-A simple backend server built with Node.js, Express, and dotenv.
+## 📌 Project Overview
+This project is a backend-based web application that retrieves and displays real-time weather data using external APIs.  
+All third-party API communication is handled strictly on the **server side**, following best backend security practices.
 
-## 📦 Requirements
+The application fetches weather data from the **OpenWeather API** and displays it to the user through a simple and responsive interface.
 
-Make sure you have the following installed:
+---
 
-- Node.js (version 18 or higher recommended)
-- npm
+## 🛠 Technologies Used
+- Node.js
+- Express.js
+- Axios
+- dotenv
+- HTML, CSS, JavaScript
 
-Check versions:
-node -v
-npm -v
+---
+
+## 📂 Project Structure
