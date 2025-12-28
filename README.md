@@ -21,8 +21,9 @@ The application fetches weather data from the **OpenWeather API** and displays i
 web2/
 |--
 server.js
-│── package.json
-│── .env
-│── README.md
-│── public/
-│   └── index.html
+package.json
+.env
+README.md
+public/
+|--
+index.html
