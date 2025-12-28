@@ -24,6 +24,5 @@ server.js
 package.json
 .env
 README.md
-public/
-|--
-index.html
+public/index.html
+
