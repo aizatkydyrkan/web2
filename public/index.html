@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      max-width: 600px;
+      margin: auto;
+    }
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+    }
+    button {
+      cursor: pointer;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Weather App</h1>
+
+  <input type="text" id="city" placeholder="Enter city (e.g. London)">
+  <button onclick="getWeather()">Get Weather</button>
+
+  <pre id="output"></pre>
+
+  <script>
+    async function getWeather() {
+      const city = document.getElementById('city').value;
+      const output = document.getElementById('output');
+
+      if (!city) {
+        output.textContent = 'Please enter a city name';
+        return;
+      }
+
+      try {
+        const response = await fetch(`/weather?city=${city}`);
+        const data = await response.json();
+        output.textContent = JSON.stringify(data, null, 2);
+      } catch (error) {
+        output.textContent = 'Error fetching weather';
+      }
+    }
+  </script>
+
+</body>
+</html>
